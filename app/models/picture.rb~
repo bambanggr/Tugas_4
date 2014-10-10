@@ -1,0 +1,4 @@
+class Picture < ActiveRecord::Base
+	attr_accessible :title, :pic_name
+	mount_uploader :pic_name, ImageUploader
+end

@@ -1,0 +1,27 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: pin_app_development
+  pool: 5
+  username: postgres
+  password: 1wax2qsz
+  host: localhost
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: pin_app_test
+  pool: 5
+  username: postgres
+  password: 1wax2qsz
+  host: localhost
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: pin_app_production
+  username: pin_app
+  pool: 5
+  username: postgres
+  password: 1wax2qsz
+  host: localhost
