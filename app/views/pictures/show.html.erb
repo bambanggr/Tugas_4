@@ -1,14 +1,14 @@
 <p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Title:</strong>
-  <%= @picture.title %>
-</p>
-
-<p>
-  <strong>Pic name:</strong>
-  <%= @picture.pic_name %>
-</p>
-
-<%= link_to 'Edit', edit_picture_path(@picture) %> |
-<%= link_to 'Back', pictures_path %>
+<div class='col-md-4'>
+	<div class='thumbnail'>
+		<%= image_tag @picture.pic_name_url.to_s %>
+			<div class="caption">
+				<h3>
+				<strong><%= @picture.title %></strong>
+				</h3>
+<%= link_to 'Edit', edit_picture_path(@picture), class:'btn btn-primary' %> |
+<%= link_to 'Delete', @picture, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %> |
+<%= link_to 'Back', pictures_path, class:'btn btn-success' %>
+			</div>
+	</div>
+</div>

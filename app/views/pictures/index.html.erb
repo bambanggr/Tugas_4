@@ -1,5 +1,7 @@
 <h1>Listing pictures</h1>
 <br>
+<%= link_to 'New Picture', new_picture_path, class:'btn btn-primary' %>
+<br>
 <hr>
 <% @pictures.each do |picture| %>
 <div class='col-md-4'>
@@ -16,6 +18,3 @@
 	</div>
 </div>
 <% end %>
-
-<br>
-<%= link_to 'New Picture', new_picture_path %>
