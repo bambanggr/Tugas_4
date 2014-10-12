@@ -1,4 +1,4 @@
-<%= form_for(@picture), :html => {:multipart => true} do |f| %>
+<%= form_for @picture, :html => {:multipart => true} do |f| %>
   <% if @picture.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@picture.errors.count, "error") %> prohibited this picture from being saved:</h2>
@@ -13,13 +13,13 @@
 
   <div class="field">
     <%= f.label :title %><br>
-    <%= f.text_field :title %>
+    <%= f.text_field :title, class:'form-control' %>
   </div>
   <div class="field">
     <%= f.label :pic_name %><br>
     <%= f.file_field :pic_name %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit, class:'btn btn-default' %>
   </div>
 <% end %>

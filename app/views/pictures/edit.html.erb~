@@ -3,4 +3,4 @@
 <%= render 'form' %>
 
 <%= link_to 'Show', @picture, class:'btn btn-default' %> |
-<%= link_to 'Back', pictures_path, class:'btn btn-default' %>
+<%= link_to 'Back', pictures_path, class:'btn btn-success' %>
